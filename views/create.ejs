@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Partial berprinsip seperti komponen tapi dengan HTML -->
+<%- include('./partials/head.ejs') %> 
+<body>
+    <!-- Partial berprinsip seperti komponen tapi dengan HTML -->
+    <%- include('./partials/nav.ejs') %> 
+    
+    <div class="create-blog content">
+        <form action="/blogs" method="POST">
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="snippet">Blog Snippet:</label>
+            <input type="text" id="snippet" name="snippet" required>
+
+            <label for="body">Blog Body:</label>
+            <textarea id="body" name="body" required></textarea>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <!-- Partial berprinsip seperti komponen tapi dengan HTML -->
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>
